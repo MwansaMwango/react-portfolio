@@ -1,0 +1,223 @@
+.App .slide .content {
+    padding: 2rem 2rem 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 60;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    top: 4rem;
+}
+
+.App .slide .content .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.App .slide .content .bot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.App .slide .content .bot .row {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.App .slide .content .bot .row div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30rem;
+    margin-left: 2rem;
+    text-align: left;
+}
+
+.App .slide .content .bot .line {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.App .slide .content.skills .bot .line {
+    margin-bottom: 0.5rem;
+}
+
+.App .slide .content .bot .line .tech {
+    max-width: 80vw;
+}
+
+.App .slide .content .bot .line .lang {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.App .slide .content .bot a {
+    color: white;
+    text-decoration: none;
+    transition: 0.1s cubic-bezier(0, -0.85, 1, 1.84) all;
+}
+
+.App .slide .content .bot a:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.App .slide .content .bot .line img {
+    margin: 1rem;
+    transition: 0.1s cubic-bezier(0, -0.85, 1, 1.84) all;
+}
+
+.App .slide .content.skills .bot .line img {
+    margin: 0.5rem 1rem;
+}
+
+.App .slide .content .bot .line img:hover {
+    transform: scale(1.2);
+}
+
+.App .slide .content p {
+    padding: 1rem 10rem 0 10rem;
+}
+
+.App .slide img.back {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    position: fixed;
+    z-index: 50;
+}
+
+.img-thumbnail {
+    width: 20rem ;
+    border: none;
+}
+
+@media screen and (max-width: 520px) {
+    #root > div > div > div > div.awssld__controls {
+        visibility: visible;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+    .App .slide .content {
+        padding: 0.7rem;
+        /* border: 1px solid red; */
+    }
+    .App .slide .content.skills {
+        padding: 2rem 0.2rem 0.2rem 0.2rem;
+        /* border: 1px solid red; */
+    }
+    .App .slide .content.contacts {
+        padding: 3rem;
+    }
+    .App .slide .content .top {
+        margin-top: 2rem;
+    }
+
+    .App .slide .content .top h1 {
+        font-size: 1.5rem;
+    }
+    .App .slide .content .bot .row {
+        flex-direction: column;
+        margin: 0 0 0.5rem 0;
+    }
+    .App .slide .content .bot .row div {
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .App .slide .content .bot .line h2,
+    h3 {
+        font-size: 1.2rem;
+    }
+    .App .slide .content .bot .line img {
+        margin: 0.1rem;
+        width: 38px;
+    }
+    .App .slide .content.contacts .bot .line img {
+        margin: 0 0.5rem;
+        width: 50px;
+    }
+    .App .slide .content .bot .line img.cw {
+        margin: 0.1rem;
+        width: 90vw;
+    }
+    .App .slide .content .top {
+        animation: none;
+    }
+    .App .slide .content .bot {
+        animation: none;
+    }
+    .App .slide .content.skills .bot .line img {
+        margin: 0.4rem;
+    }
+    .App .slide .content .bot .line h6 {
+        font-weight: 100;
+        margin: 0.2rem;
+        /* color: red; */
+    }
+}
+
+/* iphone 5 */
+@media screen and (max-width: 374px) {
+    .App .slide .content .top {
+        margin-top: 0.5rem;
+    }
+    .App .slide .content .bot .line img {
+        margin: 0;
+        width: 30px;
+    }
+    .App .slide .content .bot h3,
+    h2 {
+        font-size: 1rem;
+    }
+    .App .slide .content .bot .line h2 {
+        font-size: 1.2rem;
+    }
+    .App .slide .content .bot .row h5 {
+        font-size: 1rem;
+    }
+    .App .slide .content.skills .bot .line img {
+        margin: 0.2rem;
+    }
+    .App .slide .content.skills .bot .line {
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+}
+
+/* ipad */
+@media screen and (max-width: 768px) and (min-width: 601px) {
+    .App .slide .content .bot .line img {
+        margin: 0.1rem;
+        width: 60px;
+    }
+    .App .slide .content .bot .line img.cw {
+        margin: 1rem;
+        width: 70vw;
+    }
+    .App .slide .content .bot .row {
+        flex-direction: column;
+        margin: 1rem;
+    }
+    .App .slide .content .bot .row div {
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+    }
+}

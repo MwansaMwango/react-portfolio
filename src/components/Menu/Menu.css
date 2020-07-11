@@ -1,0 +1,41 @@
+.App .menu {
+    z-index: 100;
+    background: transparent;
+    height: 66px;
+}
+
+.App .menu a {
+    color: white;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    transition: ease-in-out 0.1s all;
+    text-shadow: 1px 1px 10px grey;
+}
+
+.App .menu a.selected {
+    text-decoration: underline;
+}
+
+.App .menu a:hover {
+    transform: scale(1.1);
+}
+
+.App .menu .logo {
+    font-size: 2rem;
+}
+
+.App .menu .logo:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 990px) {
+    .App .menu {
+        background: rgba(255, 255, 255, 0.5);
+        height: 58px;
+    }
+
+    .App .menu .logo {
+        font-size: 1.5rem;
+    }
+}

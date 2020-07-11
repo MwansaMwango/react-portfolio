@@ -1,0 +1,22 @@
+.App {
+    height: 100vh;
+    width: 100vw;
+    text-shadow: 1px 1px 10px grey;
+    color: rgb(255, 255, 255);
+}
+
+.App .awssld--organic-arrows {
+    --organic-arrow-color: #fff;
+    --organic-arrow-thickness: 5px;
+}
+
+.App .awssld .awssld__wrapper .awssld__controls button span::before,
+span::after {
+    box-shadow: 1px 1px 10px rgb(71, 71, 71);
+}
+
+@media screen and (max-width: 520px) {
+    .App .awssld--organic-arrows {
+        --organic-arrow-height: 20px;
+    }
+}
