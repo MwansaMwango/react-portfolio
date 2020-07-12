@@ -4,6 +4,10 @@ Now that you've worked with React and have multiple projects to share, you'll be
 
 If you are opting out of career services, this is *still a required assignment*. Part of being a web developer means being a part of a community. Having a place to share your projects is *necessary* if you're applying for jobs, but is still *critical* on your journey as a developer.
 
+## Deployment Link
+
+[React Portfolio](https://mwansamwango.github.io/react-portfolio/)
+
 ## Requirements
 
 * Updated portfolio featuring 6 total projects
