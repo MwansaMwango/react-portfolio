@@ -9,21 +9,19 @@ const About = () => {
       <img className="back" src={back1} alt="back1" />
       <div className="contentM">
         <div className="top">
-            <br></br>
           <img
             className="avat"
             src="https://ca.slack-edge.com/TSDSFVD9C-USV3J72TX-c22d313a5f1f-512"
             alt="Mwansa"
           />
-        
+
           <h1>Hi, I'm Mwansa Mwango</h1>
           <h2>
             <span>Full Stack Developer</span>
           </h2>
-          <h4>
-            Creating innovative solutions using Mongo DB, Express, React and
-            Node.js stack.
-          </h4>
+          <h5>
+            Creating innovative solutions using MERN stack.
+          </h5>
         </div>
         <div className="bot">
           <Link className="button" href="skills">
